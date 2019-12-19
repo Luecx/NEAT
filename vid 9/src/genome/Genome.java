@@ -148,16 +148,7 @@ public class Genome {
             genome.getNodes().add(c.getFrom());
             genome.getNodes().add(c.getTo());
         }
-
-        Calculator calculator = new Calculator(genome);
-        if(calculator.calculate(1,1,1,1,1,1,1,1,1,1)[0] == 0.5 && genome.getConnections().size() != 0){
-            System.out.println(g1.getConnections().getData());
-            System.out.println(g2.getConnections().getData());
-            System.out.println(genome.getConnections().getData());
-
-            System.exit(-1);
-        }
-
+        
         return genome;
     }
 
