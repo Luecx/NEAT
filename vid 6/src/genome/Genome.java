@@ -83,7 +83,7 @@ public class Genome {
             N = 1;
         }
 
-        return neat.getC1()  * disjoint / N + neat.getC2() * excess / N + neat.getC3() * weight_diff / N;
+        return neat.getC1()  * disjoint / N + neat.getC2() * excess / N + neat.getC3() * weight_diff;
 
     }
 
